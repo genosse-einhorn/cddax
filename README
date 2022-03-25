@@ -1,0 +1,58 @@
+CddaX - CD Digital Audio eXtractor
+==================================
+
+CddaX is a tiny windows application to rip audio CDs.
+
+
+Features
+--------
+
+* Encodes as MP3 or FLAC files
+* Can rip hidden tracks
+* Can load metadata and cover art from MusicBrainz
+
+
+Runtime Requirements
+--------------------
+
+* Basic functionality: .NET 4.0 on Windows XP or higher
+* MusicBrainz and High DPI support: .NET 4.8 on Windows 7 or higher
+
+There is some experimental code to support Mono on Linux,
+but I recommend you run it in wine with real .NET 4.8 installed.
+
+
+How to build
+------------
+
+CddaX is built using Visual Studio 2010. There is a VS solution containing
+the main app and the installer project inside the CddaX subdirectory.
+
+LAME: use the VS command prompt, change to the 3rdparty/lame directory,
+then run
+
+    nmake -f Makefile.MSVC ASM=no MSVCVER=8.0
+
+or
+
+    nmake -f Makefile.MSVC ASM=no MSVCVER=Win64
+
+and copy the resulting file to CddaX/CddaX/lame{64,}.exe
+
+FLAC: create a new empty build directory somewhere and use cmake
+
+    cmake path\to\CddaX\3rdparty\flac \
+        -G "NMake Makefiles" \
+        -DWITH_OGG=0 \
+        -DCMAKE_BUILD_TYPE=Release
+
+Then edit CMakeCache.txt and replace every occurence of "/MD" with "/MT".
+After that, build it with nmake and copy the result from src/flac/flac.exe
+to CddaX/CddaX/flac{64,}.exe
+
+
+License
+-------
+
+CddaX is licensed under GNU GPL v3. See the LICENSE file for details.
+

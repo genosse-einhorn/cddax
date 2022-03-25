@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <title>CDDA-X</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 3em auto;
+            max-width: 40em;
+            line-height: 1.6;
+            font-size: 1.2;
+            color: #444;
+            padding: 0 1em;
+            font-family: sans-serif;
+        }
+        h1, h2, h3 {
+            line-height:1.2
+        }
+        h1 {
+            font-size: 3em;
+            font-weight: 300;
+            margin-bottom: 0.1em;
+        }
+        p.subtitle {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 100%;
+            margin: 0.1em 0 3em 0;
+        }
+        img.logo {
+            width: 10em;
+            height: 10em;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.svg" class="logo">
+    <h1>CDDA-X</h1>
+    <p class="subtitle">CD Digital Audio eXtractor</p>
+    <h2>Download</h2>
+    <p>
+        Current version: v22.4 from April 7, 2022
+    <ul>
+        <li><strong><a href="https://github.com/genosse-einhorn/cddax/releases/download/v22.4.0/cddax-22.4.0.msi">Installer (.msi)</a></strong>
+        <li><a href="https://github.com/genosse-einhorn/cddax/releases/download/v22.4.0/cddax-22.4.0.zip">Portable version (.zip)</a>
+        <li><a href="https://github.com/genosse-einhorn/cddax/releases/download/v22.4.0/cddax-22.4.0-src.tar.gz">Source Code</a>
+    </ul>
+    <h2>Features</h2>
+    <ul>
+        <li>Can encode <a href="https://en.wikipedia.org/wiki/MP3">MP3</a> and <a href="https://en.wikipedia.org/wiki/FLAC">FLAC</a> files
+        <li>Can read <a href="https://en.wikipedia.org/wiki/CD-Text">CD-Text</a>
+        <li>Can download metadata and cover art from <a href="https://musicbrainz.org">MusicBrainz</a>
+        <li>Can rip hidden tracks
+        <li>Is free software (<a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv3</a>)
+    </ul>
+    <h2>System Requirements</h2>
+    <p>
+        Basic functionality works on .NET Framework 4.0 on Windows XP or higher.
+        For MusicBrainz and High-DPI support, .NET Framework 4.8 is required.
+        Windows 10 and 11 already ship with .NET 4.8.
+    <p>
+        NOTE: On Windows 7, you’ll need to
+        <a href="https://docs.microsoft.com/en-us/windows-server/security/tls/tls-registry-settings">manually
+        enable TLS 1.2</a> in order to be able to connect to MusicBrainz.
+    <p>
+        There is some experimental code to support Mono on Linux, but I recommend
+        you run it in <a href="https://www.winehq.org/">wine</a> with real .NET 4.8 installed.
+    <h2>Screenshots</h2>
+    <p>
+        <a href="screenshots/main-winxp.png"><img src="screenshots/thumbnail/main-winxp.png" width=200 height=170></a>
+        <a href="screenshots/main-win8.png"><img src="screenshots/thumbnail/main-win8.png" width=200 height=170></a>
+        <a href="screenshots/rip-parameters-win7.png"><img src="screenshots/thumbnail/rip-parameters-win7.png" width=200 height=157></a>
+        <a href="screenshots/select-disc-win8.png"><img src="screenshots/thumbnail/select-disc-win8.png" width=200 height=124></a>
+        <a href="screenshots/main-win10.png"><img src="screenshots/thumbnail/main-win10.png" width=200 height=171></a>
+        <a href="screenshots/ausleseparameter-win11.png"><img src="screenshots/thumbnail/ausleseparameter-win11.png" width=200 height=157></a>
+    <h2>Other resources</h2>
+    <ul>
+        <li><a href="https://github.com/genosse-einhorn/cddax">Source code repository on GitHub</a>
+    </ul>
+</body>

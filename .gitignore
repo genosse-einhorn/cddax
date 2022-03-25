@@ -1,0 +1,9 @@
+*.suo
+*.csproj.user
+CddaX/CddaX/bin
+CddaX/CddaX/obj
+CddaX/Installer/Debug
+CddaX/Installer/Release
+Thumbs.db
+Thumbs.db:*
+
