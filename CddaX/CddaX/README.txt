@@ -1,5 +1,5 @@
 ﻿CDDA-X: CD Digital Audio Extractor <https://cddax.genosse-einhorn.de/>
-Copyright (C) 2022 Jonas Kümmerlin
+Copyright (C) 2022-2024 Jonas Kümmerlin
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

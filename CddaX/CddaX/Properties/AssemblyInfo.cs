@@ -11,7 +11,7 @@ using System.Runtime.Versioning;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("CDDA-X")]
-[assembly: AssemblyCopyright("Copyright © 2022 Jonas Kümmerlin <jonas@kuemmerlin.eu>")]
+[assembly: AssemblyCopyright("Copyright © 2022-2024 Jonas Kümmerlin <jonas@kuemmerlin.eu>")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,7 +33,7 @@ using System.Runtime.Versioning;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("22.4.0.0")]
-[assembly: AssemblyFileVersion("22.4.0.0")]
+[assembly: AssemblyVersion("22.4.1.0")]
+[assembly: AssemblyFileVersion("22.4.1.0")]
 
 [assembly: TargetFramework(".NETFramework,Version=v4.8")]
