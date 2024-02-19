@@ -70,6 +70,7 @@ namespace CddaX
                 if (fbd.ShowDialog(this) == DialogResult.OK)
                 {
                     tbBaseFolder.Text = fbd.SelectedPath;
+                    tbBaseFolder.DataBindings["Text"].WriteValue();
                 }
             }
         }
